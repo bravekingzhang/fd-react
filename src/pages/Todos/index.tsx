@@ -36,7 +36,7 @@ const Todos = () => {
         type="line-divide"
         defaultActiveTab={0}
         tabBarHasDivider={false}
-        onAfterChange={(tab, index) => {
+        onAfterChange={(_, index) => {
           setActive(newsPageOptions[index].id);
         }}
         translateZ={false}

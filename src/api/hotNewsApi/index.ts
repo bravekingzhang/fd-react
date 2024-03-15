@@ -11,7 +11,7 @@ export const useFetchHotNews = (type: string) => {
       })
   );
   return {
-    hotNews: data?.data.list,
+    hotNews: data?.list,
     error,
     isLoading,
     isValidating,
