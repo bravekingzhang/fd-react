@@ -10,7 +10,7 @@ import { useFetchTodos } from "@/api/todo";
 import { TodoItem } from "@/api/todo/types";
 
 const newsPageOptions = [
-  { title: "待办事项", id: "zhihu" },
+  { title: "待办", id: "zhihu" },
   { title: "微博", id: "weibo" },
   { title: "微信", id: "weixin" },
   { title: "百度", id: "baidu" },
@@ -49,7 +49,7 @@ const Todos = () => {
             {isLoading
               ? [1, 2].map((item) => <Skeleton key={item} />)
               : list?.map((item) => (
-                  <Cell
+                  <div
                     style={{
                       marginTop: "10px",
                       marginBottom: "10px",

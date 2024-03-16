@@ -18,7 +18,7 @@ export const StrictModeAppWithDarkModeContext = () => {
   );
 };
 
-setRootPixel();
+// setRootPixel();
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictModeAppWithDarkModeContext />
 );

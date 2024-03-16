@@ -23,7 +23,7 @@ export default defineConfig({
       less: {
         javascriptEnabled: true,
         modifyVars: {
-          "@base-font-size": 52,
+          "@base-font-size": 14,
           // "@use-dark-mode": 0, // 禁用暗黑模式
           // "@primary-color": "red",
           "@arco-dark-mode-selector": ".arco-theme-dark",
@@ -43,6 +43,7 @@ export default defineConfig({
     ],
   },
   server: {
+    host: "0.0.0.0",
     proxy: {
       "/api/": {
         target: "https://jsonplaceholder.typicode.com/",
