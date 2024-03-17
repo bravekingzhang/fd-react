@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   /* dark mode */
-  background-color: #17171A;
+  /* background-color: #17171A; */
 }
 
 ul,

@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Todos = lazy(() => import("@/pages/Todos"));
-
+const Login = lazy(() => import("@/pages/Login"));
 const routes: RouteObject[] = [
   {
     path: "/",
@@ -31,6 +31,10 @@ const routes: RouteObject[] = [
     path: "todos",
     element: lazyLoad(Todos),
   },
+  {
+    path:"login",
+    element: lazyLoad(Login),
+  }
 ];
 
 const BrowserRouter = createBrowserRouter(routes, {
