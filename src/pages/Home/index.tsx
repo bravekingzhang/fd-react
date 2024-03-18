@@ -1,7 +1,7 @@
 import useCounterStore from "@/store/counter";
 import useGlobalStore from "@/store/global";
 import { Button } from "@arco-design/mobile-react";
-import ImagePreviewDemo from "@/components/ImagePreviewer";
+import ImagePreviewComponent from "@/components/ImagePreviewer";
 import {
   Switch,
   Cell,
@@ -74,7 +74,7 @@ const Home = () => {
         title={title}
         randomOrder={false}
       />
-      <ImagePreviewDemo />
+      <ImagePreviewComponent />
       <Button
         onClick={() => {
           navigate("/todos");

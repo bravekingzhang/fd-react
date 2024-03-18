@@ -5,7 +5,7 @@ declare global {
 }
 import { Cell, ImagePreview } from "@arco-design/mobile-react";
 
-export default function ImagePreviewDemo() {
+export default function ImagePreviewComponent() {
   return (
     <>
       <Cell
